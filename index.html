@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+
+    <div id="overlay" onclick="off()">
+      <div id="text" class="text-center mt-4"></div>
+      <p class="fs-3 text-center mt-3" style="color: white;">We hope to see you on the Burning man event in Nevada, 2
+        days before labor day 1st of may</p>
+      <img id="burningman" src="https://c.tenor.com/DoGyA3UeyMIAAAAM/fire-on-fire.gif"
+        style="height: 45vh; width: 45vh;" loop=infinite>
+    </div>
+
+
+    <div id="big-container">
+      <video id="videoHome" playsinline="" autoplay="autoplay" loop="loop" muted="muted" class="video-content-islink">
+        <source id="mp4_src"
+          src="https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f3/Burning_Man_1995.webm/Burning_Man_1995.webm.480p.vp9.webm#t=00:07:01"
+          type="video/mp4">
+      </video>
+
+      <div class="container my-5 h-100 w-100">
+
+        <div class="row text-center mb-4 ">
+          <div class="col"></div>
+          <h1 class="mt-3">BURNING MAN 🔥</h1>
+          <p class="fs-1">Vanilla JavaScript HANGMAN GAME</p>
+        </div>
+
+        <div class="row text-center d-flex flex-wrap justify-content-center">
+          <div class="col">
+            <div class="h3">Use te alphabet below to guess the word, or Click hint to get a clue</div>
+            <div id="btn-container"></div>
+          </div>
+        </div>
+
+        <div class="chosen row d-flex flex-row-reverse">
+          <div class="preview">Try to guess the correct word</div>
+          <div class="col ">
+
+            <p class=" fs-3 text-center" id="hint"></p>
+            <div class="game-over"></div>
+          </div>
+          <div id="portrait">
+            <!-- <img src="./images/0.jpg" alt="" class="container border" style="height: 45vh; width: fit-content;"> -->
+          </div>
+        </div>
+
+        <div class="row  d-flex mt-3 justify-content-center">
+          <div class="col-md-4 col-lg-4 col-xl-4  ">
+            <div class="btn-hint btn btn-warning" id="btn-hint">
+              Hint
+            </div>
+            <button class="btn btn-danger mx-3" onClick="window.location.reload();">Play Again</button>
+          </div>
+        </div>
+        <div>
+          <p id="lives"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript P5.js library -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script> -->
+  <script src="./scripts/script.js"></script>
+  <!-- <script src="./scripts/sketch.js"></script> -->
+
+</html>
